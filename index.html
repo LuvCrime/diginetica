@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link href="node_modules\nouislider\distribute\nouislider.css" rel="stylesheet">
+
+    <title>Diginetica</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-block">
+        <div class="header">
+          <div class="header-name">Шапка сайта</div>
+        </div>
+        <div class="search-line">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Запрос пользователя"
+          />
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <button class="button-find">Найти</button>
+          <button class="button-close">Закрыть</button>
+        </div>
+        <div class="product-info">
+          <div class="results-of-request">
+            <div class="header-results">Результаты по запросу</div>
+            <div class="show-results">
+              Показаны результаты для “Запрос пользозвателя”. Вы искали “Зопрос
+              пользователя”.
+            </div>
+          </div>
+          <div class="product-categories">
+          </div>
+
+          <div class="catalog">
+            <div class="catalog-sidebar">
+              <div class="all-categories">
+                <ul class="all-categories-list">
+                  <div class="category-header">Все категории</div>
+                  <a href="#" class="more-categories-link links-sidebar"><li class="more-categories">Ещё 10 категорий...</li></a>
+                </ul>
+              </div>
+              <div class="price">
+              <div class="price-header">Цена, валюта</div>
+              <div class="input-price">
+                <label>от
+                <input type="number" class="input-price-form">
+              </label>
+              <label>до
+                <input type="number" class="input-price-form">
+                Р
+              </label>
+              </div>
+              <div id="slider"></div>
+              </div>
+              <div class="brands">
+                <div class="brands-clear">
+                <div class="brands-header">Бренды</div>
+                  <div class="clear">
+                    <a href="#">Очистить</a>
+                  </div>
+                </div>
+                  <div class="checkbox-brands">
+                    <label>
+                    <input type="checkbox" class="brand-item"></input>
+                    Бренд
+                    <span class="price-info">(xxx)</span class="price-info">
+                  </label>
+                  <label>
+                    <input type="checkbox" class="brand-item"></input>
+                    Бренд
+                    <span class="price-info">(xxx)</span class="price-info">
+                  </label>
+                  <label>
+                    <input type="checkbox" class="brand-item"></input>
+                    Бренд
+                    <span class="price-info">(xxx)</span class="price-info">
+                  </label>
+                  </div>
+            
+              </div>
+            </div>
+            <div class="catalog-content">
+              <div class="inner-sorter">
+              <div class="catalog-sorter">
+                <span class="sort">Сортировать по:</span>
+                  <a href="#" class="focus-default">поулярности</a>
+                  <a href="#">сначала дешевые</a>
+                  <a href="#">сначала дорогие</a>
+              </div>
+              <div class="content-quantity">
+                <span class="show-quantity">показывать по</span>
+                <form action="select">
+                  <select size="1">
+                   <option value="9">9</option>
+                   <option value="24">24</option>
+                  </select>
+                 </form>
+              </div>
+            </div>
+            <div class="tags-group">
+              <ul class="tags-group-list">
+                <a href="#" class="tags-group-item"><li>Уточнение</li></a>
+                <a href="#" class="tags-group-item"><li>Уточнение</li></a>
+                <a href="#" class="tags-group-item"><li>Уточнение</li></a>
+                <a href="#" class="tags-group-item"><li>Уточнение</li></a>
+              </ul>
+            </div>
+            <div class="products-container">
+             
+            </div>
+            </div>
+          </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules\nouislider\distribute\nouislider.js"></script>
+    <script src="script.js" type="module"></script>
+
+    <template class="category-item">
+        <div class="category-item-info">
+                  <div class="item-img"></div>
+                  <div class="item-info-wrapper">
+                    <div class="item-name"></div>
+                    <div class="item-quantity"></div>
+                  </div>
+                </div>
+              </template>
+      <template class="all-categories-sidebar">
+        <a href="#" class="links-sidebar"><li class="item-sidebar"></li></a>
+      </template>
+
+      <template class="product-card">
+        <div class="product-card-item">
+        <div class="product-img"></div>
+        <div class="product-name"></div>
+        <div class="product-price">
+          <div class="product-price-current"></div>
+          <div class="product-price-discount"></div>
+        </div>
+        <button class="product-button">Кнопка</button>
+      </div>
+      </template>
+
+      </template>
+  </body>
+</html>

@@ -1,0 +1,348 @@
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+
+textarea:focus, input:focus {
+  outline: none; }
+
+ul,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+button {
+  cursor: pointer;
+  outline: none; }
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.main-block {
+  display: flex;
+  border: 1px solid black;
+  width: 1280px;
+  flex-direction: column;
+  align-items: center; }
+
+.header {
+  height: 100px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+
+.header-name {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  margin-left: 24px; }
+
+.search-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 32px;
+  position: relative; }
+
+.search-input {
+  width: 975.5px;
+  height: 40px;
+  border: 1px solid #C7C7C7;
+  padding-left: 57px; }
+
+.search-icon {
+  position: absolute;
+  left: 21px;
+  top: 12px;
+  border-right: 1px solid #C7C7C7;
+  width: 30px; }
+
+.fa-search,
+.fas {
+  width: 5.67px; }
+
+.button-find {
+  width: 145px;
+  height: 40px;
+  background-color: #F1BD45;
+  border-radius: 0px 3px 3px 0px;
+  border: none;
+  margin-right: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700; }
+  .button-find:hover {
+    color: white;
+    border: 1px solid #d8ad49;
+    text-shadow: 0 0 2em white; }
+
+.button-close {
+  width: 117px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700; }
+  .button-close:hover {
+    color: #F1BD45;
+    border: 1px solid #F1BD45;
+    text-shadow: 0 0 2em white; }
+
+.results-of-request {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.header-results {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px; }
+
+.product-info {
+  display: flex;
+  width: 1200px;
+  margin-top: 31px;
+  flex-direction: column; }
+
+.show-results {
+  margin-left: 19px;
+  font-family: Open Sans;
+  font-size: 14px;
+  color: #8B8B8B;
+  padding-top: 7px; }
+
+.item-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px; }
+
+.product-categories {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px; }
+
+.item-info-wrapper {
+  padding-right: 20px; }
+
+.category-item-info {
+  display: flex;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #C7C7C7;
+  cursor: pointer; }
+
+.item-name {
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 19.7px; }
+
+.item-quantity {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8B8B8B; }
+
+.catalog {
+  display: flex;
+  flex-direction: row;
+  margin-top: 39px; }
+
+.catalog-sidebar {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 470px; }
+
+.links-sidebar {
+  color: #5375B7; }
+
+.links-sidebar:hover {
+  color: #F1BD45; }
+
+.all-categories {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.input-price-form {
+  height: 40px;
+  width: 110px; }
+
+.item-sidebar,
+.brand-item {
+  margin: 0 0 10px 0; }
+
+.category-header {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.all-categories-list {
+  padding: 0; }
+
+.price-header,
+.brands-header {
+  font-size: 14px;
+  font-weight: bold; }
+
+.price-header {
+  margin-bottom: 16px; }
+
+.price {
+  margin-top: 46px; }
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px; }
+
+.brands-clear {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px; }
+
+.clear a {
+  font-size: 10px;
+  border-bottom: 1px solid #333333;
+  color: #333333; }
+
+.price-info {
+  color: #C4C4C4;
+  font-size: 10px; }
+
+.checkbox-brands {
+  display: flex;
+  flex-direction: column; }
+
+.brands-header {
+  margin-right: 188px; }
+
+#slider {
+  margin-top: 19px; }
+
+.range-slider {
+  height: 4px !important;
+  background-color: black !important;
+  width: 290px !important; }
+
+.noUi-horizontal,
+.noUi-handle {
+  top: -4px !important; }
+
+.noUi-horizontal:focus,
+.noUi-handle:focus,
+.noUi-touch-area:focus {
+  outline: none !important; }
+
+.noUi-connect {
+  background: black !important;
+  transform: none !important; }
+
+.noUi-handle {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50% !important;
+  background-color: black !important;
+  box-shadow: none !important; }
+
+.noUi-handle::after,
+.noUi-handle::before {
+  content: none !important; }
+
+.inner-sorter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: Open Sans;
+  font-size: 14px; }
+
+.catalog-sorter a {
+  color: #5375B7; }
+
+.catalog-sorter a:active,
+.catalog-sorter a:hover,
+.catalog-sorter a:focus {
+  outline: none;
+  border-bottom: 1px solid #F1BD45;
+  color: #333333; }
+
+.content-quantity {
+  display: flex;
+  flex-direction: row; }
+
+.sort {
+  margin-right: 10px; }
+
+.catalog-sorter a {
+  margin-right: 15px; }
+
+.catalog-content {
+  width: 100%; }
+
+.show-quantity {
+  margin-right: 10px; }
+
+.tags-group-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0; }
+
+.tags-group-item {
+  display: flex;
+  background: #FFF3D8;
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 14px;
+  color: #333333;
+  box-sizing: border-box; }
+
+.tags-group-item:active,
+.tags-group-item:hover {
+  border: 1px solid #F1BD45; }
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.product-img {
+  width: 260px;
+  height: 260px; }
+
+.product-card-item {
+  margin-right: 27px; }
+
+.product-button {
+  background: #F1BD45;
+  width: 260px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700; }
+
+.product-card-item {
+  display: flex;
+  margin-bottom: 40px;
+  flex-direction: column; }
