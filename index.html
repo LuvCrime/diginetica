@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -15,11 +16,11 @@
     <title>Diginetica</title>
   </head>
   <body>
+    <div class="header">
+      <div class="header-name">Шапка сайта</div>
+    </div>
     <div class="wrapper">
       <div class="main-block">
-        <div class="header">
-          <div class="header-name">Шапка сайта</div>
-        </div>
         <div class="search-line">
           <input
             type="search"
@@ -55,10 +56,10 @@
               <div class="price-header">Цена, валюта</div>
               <div class="input-price">
                 <label>от
-                <input type="number" class="input-price-form">
+                <input type="number" class="input-price-form input-from">
               </label>
               <label>до
-                <input type="number" class="input-price-form">
+                <input type="number" class="input-price-form input-to">
                 Р
               </label>
               </div>
@@ -95,16 +96,16 @@
               <div class="inner-sorter">
               <div class="catalog-sorter">
                 <span class="sort">Сортировать по:</span>
-                  <a href="#" class="focus-default">поулярности</a>
-                  <a href="#">сначала дешевые</a>
-                  <a href="#">сначала дорогие</a>
+                  <a href="#" class="focus-default" data-sort="default">поулярности</a>
+                  <a href="#" data-sort="cheap">сначала дешевые</a>
+                  <a href="#" data-sort="expensive">сначала дорогие</a>
               </div>
               <div class="content-quantity">
                 <span class="show-quantity">показывать по</span>
                 <form action="select">
-                  <select size="1">
+                  <select size="1" class="select-val">
                    <option value="9">9</option>
-                   <option value="24">24</option>
+                   <option value="18">18</option>
                   </select>
                  </form>
               </div>
@@ -118,21 +119,41 @@
               </ul>
             </div>
             <div class="products-container">
-             
             </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous" data-page="1">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" data-page="1">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" data-page="2">2</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next" data-page="2">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
             </div>
           </div>
-        
           </div>
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="node_modules\nouislider\distribute\nouislider.js"></script>
     <script src="script.js" type="module"></script>
-
     <template class="category-item">
         <div class="category-item-info">
-                  <div class="item-img"></div>
+                  <div class="item-img"><svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="60" height="60" rx="3" fill="#C4C4C4"/>
+                    </svg></div>
                   <div class="item-info-wrapper">
                     <div class="item-name"></div>
                     <div class="item-quantity"></div>
@@ -142,19 +163,19 @@
       <template class="all-categories-sidebar">
         <a href="#" class="links-sidebar"><li class="item-sidebar"></li></a>
       </template>
-
       <template class="product-card">
         <div class="product-card-item">
-        <div class="product-img"></div>
+        <div class="product-img"><svg width="260" height="260" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="60" height="60" rx="3" fill="#C4C4C4"/>
+          </svg></div>
         <div class="product-name"></div>
         <div class="product-price">
-          <div class="product-price-current"></div>
           <div class="product-price-discount"></div>
+          <div class="product-price-current"></div>
         </div>
         <button class="product-button">Кнопка</button>
       </div>
       </template>
-
       </template>
   </body>
 </html>
